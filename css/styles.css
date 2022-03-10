@@ -35,3 +35,46 @@ ul {
     list-style: none;
 }
 
+/* SECTIONS */
+
+header {
+    height: 150px;
+    background-color: cornflowerblue;
+}
+
+section {
+    height: 300px;
+}
+
+.jumbotron {
+    background-color: red;
+}
+
+.pricing {
+    background-color: orange;
+
+}
+.partner {
+    background-color: yellow;
+}
+
+.showcase {
+    background-color: green;
+}
+
+.testimonials {
+    background-color: blue;
+}
+
+.calltoaction {
+    background-color: indigo;
+}
+
+.faq {
+    background-color: violet;
+}
+
+footer {
+    height: 150px;
+    background-color: cornflowerblue;
+}
