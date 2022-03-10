@@ -49,6 +49,11 @@ ul {
 
 header {
     padding: 0 1.5rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
 }
 
 .header-col {
@@ -69,36 +74,86 @@ header {
     float: right;
 }
 
+.header-col ul {
+    display: inline-block;
+}
+
 .header-col li {
     display: inline-block;
     margin-left: 2rem;
     vertical-align: middle;
 }
 
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 1em;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1rem;
+}
+
+.btn-small {
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 0.8rem;
+
+}
+
+.btn-blue {
+    background-color: #0061ff;
+    color: white;
+}
 
 /* SECTIONS */
-
+/* TEST
 section {
-    /* TEST */
     height: 300px;
+} */
+
+/* JUMBOTRON */
+
+#jumbotron {
+    background-color: #b4d0e7;
+    margin-bottom: 5rem;
+    padding: 9rem 0 8rem;
 }
 
 
-#jumbotron {
-    background-color: red;
+.jumbotron-top {
+    font-size: 3rem;
     margin-bottom: 3rem;
 }
 
+.jumbotron-bottom::after {
+    content: '';
+    display: table;
+    clear: left;
+}
 
 #jumbotron .column.text {
     width: 35%;
-    border: 2px solid black;
+    padding-right: 2rem;
 }
 
+#jumbotron .herotext {
+    margin-bottom: 2rem;
+}
+
+#jumbotron .button-caption {
+    font-size: 0.8rem;
+    margin: 1em 0;
+}
+
+#jumbotron .innerlink {
+    font-size: 2rem;
+}
+
+
 #jumbotron .column.img {
+    float: right;
     width: 65%;
-    border: 2px solid black;
-    height: 350px;
 }
 
 #pricing {
