@@ -50,13 +50,19 @@ ul {
     float: left;
 }
 
-section .title {
+section .title,
+section .description {
     margin-bottom: 2rem;
 }
 
 section .title h2 {
     font-size: 2.5rem;
 }
+
+section .title h3 {
+    font-size: 1.5rem;
+}
+
 
 /* BUTTONS */
 .btn {
@@ -79,6 +85,12 @@ section .title h2 {
 .btn-blue {
     background-color: #0061ff;
     color: white;
+}
+
+.btn-whiteonwhite {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
 }
 
 /* HEADER */
@@ -270,38 +282,48 @@ header {
 }
 
 /* PARTNER */
-#partner {
-    background-color: yellow;
-}
 
 #partner .column {
     width: 50%;
 }
 
+#partner .column.text {
+    padding-top: 3rem;
+    padding-left: 3rem;
+}
 
 /* SHOWCASE */
 
-#showcase {
-    background-color: green;
+#showcase a {
+    color: black;
+}
+
+#showcase a:hover {
+    text-decoration: underline;
+}
+
+#showcase .row {
+    margin-bottom: 3rem;
 }
 
 #showcase .row .column {
     width: calc(100% / 3 - 2rem);
-    height: 60rem;
 }
 
 #showcase .row .column:nth-child(2) {
     margin:0 3rem;
 }
 
-
+#showcase .row h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
 
 /* TESTIMONIALS */
 
-#testimonials {
-    background-color: blue;
+#testimonials .title {
+    width: 60%;
 }
-
 
 #testimonials .companies .column {
     width: calc(100% / 3);
@@ -309,10 +331,14 @@ header {
 }
 
 #testimonials .companies .column .cell {
+    float: left;
     width: 50%;
-    height: auto;
+    /* padding-bottom: 50%; */
+    background-color: red;
 }
 
+
+/* CALL TO ACTION */
 #calltoaction {
     background-color: indigo;
 }
