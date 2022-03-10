@@ -41,6 +41,10 @@ ul {
     list-style: none;
 }
 
+.column {
+    float: left;
+}
+
 /* HEADER */
 
 header {
@@ -75,34 +79,49 @@ header {
 /* SECTIONS */
 
 section {
+    /* TEST */
     height: 300px;
 }
 
-.jumbotron {
+
+#jumbotron {
     background-color: red;
+    margin-bottom: 3rem;
 }
 
-.pricing {
+
+#jumbotron .column.text {
+    width: 35%;
+    border: 2px solid black;
+}
+
+#jumbotron .column.img {
+    width: 65%;
+    border: 2px solid black;
+    height: 350px;
+}
+
+#pricing {
     background-color: orange;
 
 }
-.partner {
+#partner {
     background-color: yellow;
 }
 
-.showcase {
+#showcase {
     background-color: green;
 }
 
-.testimonials {
+#testimonials {
     background-color: blue;
 }
 
-.calltoaction {
+#calltoaction {
     background-color: indigo;
 }
 
-.faq {
+#faq {
     background-color: violet;
 }
 
