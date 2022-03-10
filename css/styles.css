@@ -45,6 +45,36 @@ ul {
     float: left;
 }
 
+section .title {
+    margin-bottom: 2rem;
+}
+
+section .title h2 {
+    font-size: 2.5rem;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 1em;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    font-size: 1rem;
+}
+
+.btn-small {
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 0.8rem;
+
+}
+
+.btn-blue {
+    background-color: #0061ff;
+    color: white;
+}
+
 /* HEADER */
 
 header {
@@ -84,33 +114,14 @@ header {
     vertical-align: middle;
 }
 
-/* BUTTONS */
-.btn {
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0 1em;
-    height: 2.5rem;
-    line-height: 2.5rem;
-    font-size: 1rem;
+/* SECTIONS: #jumbotron, #pricing, #partner, #showcase, #testimonials, #calltoaction, #faq */
+
+
+#pricing, #partner, #showcase, #faq {
+    margin-bottom: 8rem;
 }
 
-.btn-small {
-    height: 2rem;
-    line-height: 2rem;
-    font-size: 0.8rem;
 
-}
-
-.btn-blue {
-    background-color: #0061ff;
-    color: white;
-}
-
-/* SECTIONS */
-/* TEST
-section {
-    height: 300px;
-} */
 
 /* JUMBOTRON */
 
@@ -156,10 +167,42 @@ section {
     width: 65%;
 }
 
-#pricing {
-    background-color: orange;
 
+/* PRICING */
+#pricing {
+    padding-top: 4rem;
+    /* background-color: orange; */
 }
+
+.pricing-top {
+    margin-bottom: 2rem;
+}
+
+.pricing-plans {
+    /* background-color: orange; */
+}
+
+.pricing-plans .column {
+    width: calc(100% / 3 - 2rem);
+    border: 1px solid grey;
+}
+
+.pricing-plans .column:nth-child(2) {
+    margin:0 3rem;
+}
+
+.plan .heading {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    padding: 0.5rem 0;
+}
+
+.plan .details {
+    padding: 2rem;
+}
+
+
+/* PARTNER */
 #partner {
     background-color: yellow;
 }
