@@ -37,6 +37,11 @@ a {
     text-decoration: none;
 }
 
+a.classic {
+    color:#0061ff;
+    text-decoration: underline;
+}
+
 ul {
     list-style: none;
 }
@@ -56,6 +61,7 @@ section .title h2 {
 /* BUTTONS */
 .btn {
     display: inline-block;
+    text-align: center;
     vertical-align: middle;
     padding: 0 1em;
     height: 2.5rem;
@@ -180,11 +186,16 @@ header {
 
 .pricing-plans {
     /* background-color: orange; */
+    margin-bottom: 3rem;
+}
+
+#pricing .plan {
+    border: 1px solid grey;
 }
 
 .pricing-plans .column {
     width: calc(100% / 3 - 2rem);
-    border: 1px solid grey;
+    height: 60rem;
 }
 
 .pricing-plans .column:nth-child(2) {
@@ -198,21 +209,108 @@ header {
 }
 
 .plan .details {
-    padding: 2rem;
+    padding: 2rem 2rem 0;
+    font-size: 0.8rem;
 }
 
+.plan .details div,
+.plan .details h4,
+.plan .details li {
+    margin-bottom: 1rem;
+}
+
+.plan .details .name,
+.plan .details .price {
+    font-weight: bold;
+}
+
+.plan .details .name {
+    font-size: 1.5rem;
+}
+
+.plan .details .period {
+    color: grey;
+    margin-bottom:  1.5rem;
+}
+
+.plan .details .btn {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.plan .details .separator {
+    border-bottom: 1px solid grey;
+    width: 5rem;
+}
+
+.plan .details h4 {
+    font-size: 1rem;
+}
+
+.plan .details li {
+    padding-left: 1.6em;
+    text-indent: -0.6em;
+}
+
+.plan .details li::before {
+    content: " \f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #0061ff;
+    display: inline-block;
+    width: 0.6rem;
+}
+
+.pricing-enterprise .column:first-child {
+    width: 60%;
+}
+
+.pricing-enterprise .column:nth-child(2) {
+    width: 40%;
+}
 
 /* PARTNER */
 #partner {
     background-color: yellow;
 }
 
+#partner .column {
+    width: 50%;
+}
+
+
+/* SHOWCASE */
+
 #showcase {
     background-color: green;
 }
 
+#showcase .row .column {
+    width: calc(100% / 3 - 2rem);
+    height: 60rem;
+}
+
+#showcase .row .column:nth-child(2) {
+    margin:0 3rem;
+}
+
+
+
+/* TESTIMONIALS */
+
 #testimonials {
     background-color: blue;
+}
+
+
+#testimonials .companies .column {
+    width: calc(100% / 3);
+    height: 60rem;
+}
+
+#testimonials .companies .column .cell {
+    width: 50%;
+    height: auto;
 }
 
 #calltoaction {
