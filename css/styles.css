@@ -8,6 +8,7 @@
 
 html {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
 }
 
 img {
@@ -25,6 +26,11 @@ img {
     margin: auto;
 }
 
+.container-wide {
+    width: 82%;
+    margin: auto;
+}
+
 
 a {
     color: inherit;
@@ -35,12 +41,38 @@ ul {
     list-style: none;
 }
 
-/* SECTIONS */
+/* HEADER */
 
 header {
-    height: 150px;
-    background-color: cornflowerblue;
+    padding: 0 1.5rem;
 }
+
+.header-col {
+    float: left;
+    line-height: 5rem;
+}
+
+.header-col.logo {
+    width: 8rem;
+}
+
+.logo img,
+.header-col li {
+    vertical-align: middle;
+}
+
+.header-col.right {
+    float: right;
+}
+
+.header-col li {
+    display: inline-block;
+    margin-left: 2rem;
+    vertical-align: middle;
+}
+
+
+/* SECTIONS */
 
 section {
     height: 300px;
@@ -75,6 +107,6 @@ section {
 }
 
 footer {
-    height: 150px;
+    height: 100px;
     background-color: cornflowerblue;
 }
