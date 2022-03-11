@@ -391,6 +391,10 @@ header {
     padding: 6rem 0;
 }
 
+#calltoaction .column {
+    width: 50%;
+}
+
 #calltoaction .cta-text {
     color: #61082b;
     font-size: 2rem;
@@ -400,17 +404,88 @@ header {
     text-align: right;
 }
 
-#calltoaction .column {
-    width: 50%;
-}
 
-
+/* FAQ */
 
 #faq {
-    background-color: violet;
+    /* background-color: violet; */
 }
 
+.faq-row:first-child {
+    border-top: 2px solid lightgrey;
+}
+
+.faq-row {
+    padding: 1.5rem 0;
+    border-bottom: 2px solid lightgrey;
+}
+
+
+/* Per posizionare la freccetta a destra, uso uno pseudoelemento con position absolute */
+
+.faq-row .question::after {
+    content: '\f107';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 2rem;
+}
+
+.faq-row:hover .question::after {
+    content: '\f106';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 2rem;
+}
+
+.faq-row .question {
+    position: relative;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.faq-row .answer {
+    display: none;
+}
+
+.faq-row:hover .answer {
+    display: block;
+    padding-top: 2rem;
+    width: 80%;
+    color: grey;
+}
+
+/* FOOTER */
+
 footer {
-    height: 100px;
-    background-color: cornflowerblue;
+    background-color: black;
+    color: white;
+    padding: 6rem 0 3rem;
+}
+
+footer .separator {
+    margin: 6rem 0 3rem;
+}
+
+footer .column {
+    width: 20%;
+}
+
+footer h3 {
+    margin-bottom: 1rem;
+}
+
+footer li {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.footer-bottom {
+    font-size: 0.8rem;
+    color: grey;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
