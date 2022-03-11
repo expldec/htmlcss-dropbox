@@ -399,7 +399,9 @@ header {
 
 #testimonials .column.center {
     width: calc(100% - 60vw);
+    height: 30vw;
     padding: 2rem;
+    overflow: auto;
 }
 
 #testimonials .column.center img {
@@ -456,10 +458,6 @@ header {
 
 
 /* FAQ */
-
-#faq {
-    /* background-color: violet; */
-}
 
 .faq-row:first-child {
     border-top: 2px solid lightgrey;
