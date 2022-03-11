@@ -63,6 +63,11 @@ section .title h3 {
     font-size: 1.5rem;
 }
 
+.separator {
+    border-bottom: 1px solid grey;
+    width: 5rem;
+    margin: 1rem 0;
+}
 
 /* BUTTONS */
 .btn {
@@ -93,6 +98,12 @@ section .title h3 {
     border: 1px solid black;
 }
 
+.btn-cta {
+    background-color: white;
+    color: black;
+    width: 60%;
+}
+
 /* HEADER */
 
 header {
@@ -102,6 +113,7 @@ header {
     top: 0;
     left: 0;
     background-color: white;
+    z-index: 100;
 }
 
 .header-col {
@@ -135,7 +147,7 @@ header {
 /* SECTIONS: #jumbotron, #pricing, #partner, #showcase, #testimonials, #calltoaction, #faq */
 
 
-#pricing, #partner, #showcase, #faq {
+#pricing, #partner, #showcase, #calltoaction, #faq {
     margin-bottom: 8rem;
 }
 
@@ -207,7 +219,7 @@ header {
 
 .pricing-plans .column {
     width: calc(100% / 3 - 2rem);
-    height: 60rem;
+    min-height: 50rem;
 }
 
 .pricing-plans .column:nth-child(2) {
@@ -250,10 +262,6 @@ header {
     margin: 2rem 0;
 }
 
-.plan .details .separator {
-    border-bottom: 1px solid grey;
-    width: 5rem;
-}
 
 .plan .details h4 {
     font-size: 1rem;
@@ -325,23 +333,78 @@ header {
     width: 60%;
 }
 
-#testimonials .companies .column {
-    width: calc(100% / 3);
-    height: 60rem;
+#testimonials .companies {
+    margin-top: 3rem;
 }
 
-#testimonials .companies .column .cell {
+#testimonials .quote p {
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+#testimonials .column.side {
+    width: 30vw;
+    height: 30vw;
+}
+
+#testimonials .column.center {
+    width: calc(100% - 60vw);
+    padding: 2rem;
+}
+
+#testimonials .column.center img {
+    width: 30%;
+}
+
+#testimonials .column .cell {
     float: left;
+    position: relative;
     width: 50%;
-    /* padding-bottom: 50%; */
+    height: 50%;
     background-color: red;
 }
 
+#testimonials .cell img {
+    filter: invert(100%);
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#testimonials .cell.c1 {background-color: #a2d39b;}
+#testimonials .cell.c2 {background-color: #61082b;}
+#testimonials .cell.c3 {background-color: #0093ce;}
+#testimonials .cell.c4 {background-color: #ff1c1c;}
+#testimonials .cell.c5 {background-color: #d5001f;}
+#testimonials .cell.c6 {background-color: #b4d0e7;}
+#testimonials .cell.c7 {background-color: #0d2481;}
+#testimonials .cell.c8 {background-color: #ffd830;}
+
 
 /* CALL TO ACTION */
+
+
 #calltoaction {
-    background-color: indigo;
+    background-color: #b4d0e7;
+    padding: 6rem 0;
 }
+
+#calltoaction .cta-text {
+    color: #61082b;
+    font-size: 2rem;
+}
+
+#calltoaction .cta-button {
+    text-align: right;
+}
+
+#calltoaction .column {
+    width: 50%;
+}
+
+
 
 #faq {
     background-color: violet;
