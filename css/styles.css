@@ -425,7 +425,11 @@ header {
     transform: translate(-50%,-50%);
 }
 
-#testimonials .cell.c1 {background-color: #a2d39b;}
+#testimonials .cell.c1 {
+    background-color: #a2d39b;
+    border: 0.5rem solid rgba(255,255,255,0.5);
+}
+
 #testimonials .cell.c2 {background-color: #61082b;}
 #testimonials .cell.c3 {background-color: #0093ce;}
 #testimonials .cell.c4 {background-color: #ff1c1c;}
